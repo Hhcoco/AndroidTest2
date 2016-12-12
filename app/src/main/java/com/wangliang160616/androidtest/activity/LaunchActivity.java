@@ -1,6 +1,7 @@
 package com.wangliang160616.androidtest.activity;
 
 import android.content.Intent;
+import android.graphics.Matrix;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,7 +33,7 @@ public class LaunchActivity extends AppCompatActivity {
     ,"RecyclerView点击失效测试","scrollto/scrollby","侧滑删除" , "RecyclerView侧滑删除" , "自定义ViewGroup"
     ,"android下几个常用路径的比较" , "单元测试" , "ContentProvider" , "GreenDao测试"
     ,"自定义日历" , "拖拽测试" , "异常测试" , "拖拽测试" , "跨界面拖拽" , "RecyclerView测试" ,
-    "点击和触摸冲突测试" , "Jni加密测试" , "ContentProvider测试" ,"新权限测试"};
+    "点击和触摸冲突测试" , "Jni加密测试" , "ContentProvider测试" ,"新权限测试" , "Matrix测试"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,6 +117,9 @@ public class LaunchActivity extends AppCompatActivity {
                         break;
                     case 22:
                         intent.setClass(LaunchActivity.this, CallPhoneActivity.class);
+                        break;
+                    case 23:
+                        intent.setClass(LaunchActivity.this, MatrixActivity.class);
                         break;
                 }
                 startActivity(intent);

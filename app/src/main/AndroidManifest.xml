@@ -3,8 +3,8 @@
     package="com.wangliang160616.androidtest">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA" >
-        <uses-feature android:name="android.hardware.Camera.autofocus"></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA">
+        <uses-feature android:name="android.hardware.Camera.autofocus" />
     </uses-permission>
 
     <application
@@ -73,7 +73,8 @@
         <activity
             android:name=".activity.ContentProviderTestActivity"
             android:process=":com.wangliang.hahah" />
-        <activity android:name=".activity.com.wangliang160616.androidtest.activity.CallPhoneActivity"></activity>
+        <activity android:name=".activity.com.wangliang160616.androidtest.activity.CallPhoneActivity" />
+        <activity android:name=".activity.MatrixActivity"></activity>
     </application>
 
 </manifest>
