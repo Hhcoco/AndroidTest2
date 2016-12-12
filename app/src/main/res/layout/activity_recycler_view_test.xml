@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wangliang160616.androidtest.activity.RecyclerViewTestActivity">
+
+    <com.wangliang160616.androidtest.utils.ZeusRecyclerView.ZeusRecyclerView
+        android:id="@+id/activity_recycler_view_test_rv"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.wangliang160616.androidtest.utils.ZeusRecyclerView.ZeusRecyclerView>
+
+</RelativeLayout>
