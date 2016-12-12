@@ -2,6 +2,7 @@ package com.wangliang160616.androidtest.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.wangliang160616.androidtest.R;
@@ -20,6 +21,7 @@ public class CrashTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crash_test);
         ButterKnife.bind(this);
+        Log.v("out","changes");
     }
 
     @OnClick(R.id.activity_crash_test_tv)
