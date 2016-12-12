@@ -21,7 +21,7 @@ public class CrashTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crash_test);
         ButterKnife.bind(this);
-        Log.v("out" , "change test");
+        Log.v("out" , "change test111");
     }
 
     @OnClick(R.id.activity_crash_test_tv)
