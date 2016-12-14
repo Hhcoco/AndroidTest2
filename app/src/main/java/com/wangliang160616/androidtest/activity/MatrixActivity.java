@@ -57,10 +57,13 @@ public class MatrixActivity extends AppCompatActivity {
         //matrixImgDowm.setImageBitmap(bitmap);
     }
 
+
+
     @OnClick({R.id.matrix_tv_shadow, R.id.matrix_tv_translate, R.id.matrix_tv_rotate, R.id.matrix_tv_skew, R.id.matrix_tv_scale})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.matrix_tv_shadow:
+
                 matrix.setScale(0.5f , 0.5f);
                 matrix.postTranslate(0 , bitmap.getHeight());
                 canvas.drawBitmap(bitmap , matrix , paint);
